@@ -16,7 +16,7 @@
   --shadow: 0 28px 80px rgba(0, 0, 0, 0.5);
   --font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     "Noto Sans Thai", "Thonburi", Arial, sans-serif;
-  --font-display: "Instrument Serif", "Times New Roman", Georgia, serif;
+  --font-display: "Fraunces", "Times New Roman", Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
@@ -121,8 +121,9 @@ a {
   height: 38px;
   place-items: center;
   font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.4rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
   color: var(--bg);
   background: var(--lime);
   border-radius: 10px;
@@ -208,11 +209,10 @@ nav .nav-cta:hover span {
 /* Typography helpers */
 .serif {
   font-family: var(--font-display);
-  font-weight: 400;
-}
-
-.italic {
-  font-style: italic;
+  font-style: normal;
+  font-weight: 500;
+  font-variation-settings: "opsz" 96, "SOFT" 50;
+  letter-spacing: -0.02em;
 }
 
 .eyebrow {
@@ -248,7 +248,7 @@ h1 {
   margin: 0 0 28px;
   font-family: var(--font-ui);
   font-size: clamp(2.6rem, 7.4vw, 6.8rem);
-  line-height: 0.96;
+  line-height: 0.98;
   letter-spacing: -0.035em;
   font-weight: 600;
 }
@@ -258,21 +258,27 @@ h1 .line {
 }
 
 h1 .serif {
-  font-size: 1.06em;
-  letter-spacing: -0.015em;
+  font-size: 1.04em;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  font-variation-settings: "opsz" 144, "SOFT" 50;
 }
 
 h2 {
   margin: 0 0 12px;
   font-family: var(--font-ui);
   font-size: clamp(2rem, 5vw, 4rem);
-  line-height: 1.02;
+  line-height: 1.04;
   letter-spacing: -0.03em;
   font-weight: 600;
 }
 
 h2 .serif {
-  font-size: 1.04em;
+  font-size: 1.02em;
+  font-weight: 400;
+  font-variation-settings: "opsz" 144, "SOFT" 50;
+  letter-spacing: -0.025em;
 }
 
 h3 {
@@ -506,8 +512,9 @@ p {
 .hero-card-stats dd {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-style: italic;
+  font-weight: 500;
+  font-size: 1.7rem;
+  letter-spacing: -0.02em;
   color: var(--ink);
 }
 
