@@ -3,270 +3,405 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0c0d10" />
     <meta
       name="description"
-      content="Portfolio profile website for Thewarat Khonhan, Odoo ERP Developer and Full-stack Developer."
+      content="Thewarat Khonhan — Odoo ERP & Full-stack Developer รับงาน part-time scope ชัด ส่งมอบตรงเวลา"
     />
-    <title>Thewarat Khonhan | Odoo ERP Developer</title>
+    <title>Thewarat Khonhan — Odoo ERP Developer / Part-time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <script>
       document.documentElement.classList.add("js");
     </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="grain" aria-hidden="true"></div>
     <div class="progress" aria-hidden="true"></div>
     <div class="cursor-light" aria-hidden="true"></div>
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Thewarat Khonhan home">
-        <span>TK</span>
-        <small>Developer Profile</small>
+        <span class="brand-mark">TK</span>
+        <span class="brand-meta">
+          <small>Thewarat Khonhan</small>
+          <em>Odoo · Full-stack · Part-time</em>
+        </span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#work">Experience</a>
-        <a href="#odoo">Odoo</a>
-        <a href="#part-time">Part-time</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact" class="nav-cta">Hire me <span aria-hidden="true">→</span></a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero section-shell">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Odoo ERP Developer / Full-stack / DevOps</p>
-          <h1>เทวราช คนหาญ</h1>
-          <p class="lead">
-            Odoo ERP Developer ที่ทำงานได้ทั้ง custom addons, reports, API integration,
-            frontend/backend และ deployment พร้อมใช้ AI เป็นผู้ช่วยวิเคราะห์ requirement,
-            อ่าน codebase, เขียน test และลดงานซ้ำใน workflow
+        <div class="hero-meta reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Available · Part-time / Contract · Remote-first</span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span>01</span> Portfolio · 2026
+            </p>
+            <h1>
+              <span class="serif italic">Building</span>
+              <span class="line">Odoo ERP &amp;</span>
+              <span class="line">web systems</span>
+              <span class="serif italic">that actually ship.</span>
+            </h1>
+            <p class="lead">
+              ผมคือ <strong>เทวราช คนหาญ</strong> — Odoo ERP Developer
+              สาย full-stack รับงาน part-time แบบ scope ชัด มี acceptance criteria
+              ตรวจสอบได้ และส่งมอบตรงเวลา ตั้งแต่ custom addons, รายงาน,
+              เชื่อม API ไปจนถึง deployment บน Docker / Kubernetes
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">
+                <span>เริ่มคุยงาน</span>
+                <svg viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <a class="button ghost" href="assets/Thewarat-Khonhan-CV.pdf" target="_blank" rel="noreferrer">
+                Download CV
+              </a>
+              <a class="button link" href="https://github.com/tao-thewarat" target="_blank" rel="noreferrer">
+                GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal" data-tilt>
+            <div class="hero-card-frame">
+              <img src="assets/profile.jpg" alt="Portrait of Thewarat Khonhan" />
+              <div class="hero-card-tag">
+                <span>// now</span>
+                <strong>Odoo 17 / 18 · OCA · K8s</strong>
+              </div>
+            </div>
+            <dl class="hero-card-stats">
+              <div>
+                <dt>Years</dt>
+                <dd>2+</dd>
+              </div>
+              <div>
+                <dt>Modules</dt>
+                <dd>20+</dd>
+              </div>
+              <div>
+                <dt>Reply</dt>
+                <dd>&lt; 24h</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="bento reveal" aria-label="Highlights">
+          <article class="bento-cell bento-lg">
+            <span class="bento-num">/01</span>
+            <h3>Odoo end-to-end</h3>
+            <p>
+              ทำ custom module, business logic, รายงาน QWeb / XLSX,
+              เชื่อม REST &amp; webhook, ปรับ access rights / record rules
+              และดูแล deployment ครบลูป
+            </p>
+          </article>
+          <article class="bento-cell bento-accent">
+            <span class="bento-num">/02</span>
+            <h3>Task-based<br/>part-time</h3>
+            <p>รับเป็นชิ้นงาน scope ชัด ส่งเป็น branch + เอกสารทดสอบ</p>
+          </article>
+          <article class="bento-cell">
+            <span class="bento-num">/03</span>
+            <h3>DevOps ready</h3>
+            <p>Docker, K3s, Argo CD, GitHub Actions พร้อม pipeline แยก env</p>
+          </article>
+          <article class="bento-cell bento-tall">
+            <span class="bento-num">/04</span>
+            <h3>AI-assisted, human-reviewed</h3>
+            <p>
+              ใช้ AI ช่วยอ่าน codebase, แตก requirement, generate test
+              แต่ตรวจ logic / security / performance ด้วยตัวเองทุกครั้งก่อนส่ง
+            </p>
+            <ul>
+              <li>Requirement breakdown</li>
+              <li>Code review &amp; refactor</li>
+              <li>Edge-case checklist</li>
+            </ul>
+          </article>
+          <article class="bento-cell">
+            <span class="bento-num">/05</span>
+            <h3>Reports specialist</h3>
+            <p>PDF / QWeb / XLSX ที่ format ตรง requirement ใช้งานจริง</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section-shell work">
+        <header class="section-heading reveal">
+          <p class="eyebrow"><span>02</span> Experience</p>
+          <h2><span class="serif italic">Where</span> I&apos;ve worked</h2>
+          <p class="section-sub">
+            ประสบการณ์จริงในงาน Odoo ERP, infrastructure และ developer
+            สนับสนุนทีมวิจัย — ครอบคลุมตั้งแต่ออกแบบโมดูลถึง deploy production
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="assets/Thewarat-Khonhan-CV.pdf" target="_blank" rel="noreferrer">
-              View CV
-            </a>
-            <a class="button ghost" href="mailto:thewarat.tao19@gmail.com">Hire Part-time</a>
-            <a class="button subtle" href="https://github.com/tao-thewarat" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-          </div>
-        </div>
+        </header>
 
-        <div class="hero-visual reveal" data-tilt>
-          <div class="portrait-frame">
-            <img src="assets/profile.jpg" alt="Portrait of Thewarat Khonhan" />
-          </div>
-          <div class="status-strip" aria-label="Current focus">
-            <span>Open for part-time Odoo / web development</span>
-            <strong>Odoo + AI-assisted delivery</strong>
-          </div>
-        </div>
+        <ol class="timeline" role="list">
+          <li class="timeline-item reveal">
+            <div class="timeline-side">
+              <time>มิ.ย. 2568 — ปัจจุบัน</time>
+              <span class="badge live">● Current</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Odoo ERP Developer</h3>
+              <p class="company">บริษัท ไอโมทีฟ จำกัด</p>
+              <ul>
+                <li>Setup และดูแล Odoo ERP บน Docker / Kubernetes ให้ deploy และ scale ได้ยืดหยุ่น</li>
+                <li>พัฒนา custom addons จาก OCA และ Core Odoo ในกลุ่ม Accounting, Sales, Purchase, Inventory</li>
+                <li>ออกแบบ PDF / XLSX reports, server actions, automation และเชื่อม API ตามโจทย์ธุรกิจ</li>
+                <li>Debug จาก log / database, วิเคราะห์ requirement และปรับ flow ให้เข้ากับงานจริงของผู้ใช้</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-side">
+              <time>พ.ย. 2568 — มี.ค. 2569</time>
+              <span class="badge">Research</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Research Assistant · DevOps Support</h3>
+              <p class="company">AI Chatbot Research Project — Musya</p>
+              <ul>
+                <li>ดูแล infrastructure, backend services และ Kubernetes cluster ด้วย K3s</li>
+                <li>ใช้ Longhorn สำหรับ persistent storage และวาง monitoring เบื้องต้น</li>
+                <li>ทำงานร่วมกับทีมวิจัยให้ระบบ AI chatbot เสถียรพอใช้งานต่อเนื่อง</li>
+                <li>ใช้ AI ช่วยสรุป requirement, จับ edge cases และวางแผน test ก่อน deploy</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-side">
+              <time>ธ.ค. 2568 — ก.พ. 2569</time>
+              <span class="badge">Freelance</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Freelance Odoo ERP Developer</h3>
+              <p class="company">บริษัท อะราวด์ เอ็นเตอร์ไพรซ์ คอนซัลติ้ง จำกัด</p>
+              <ul>
+                <li>พัฒนาและปรับแต่ง Odoo ERP ตาม task ที่ได้รับมอบหมายเป็นรายชิ้น</li>
+                <li>ออกแบบรายงาน PDF / XLSX สำหรับงานภายในองค์กร</li>
+                <li>เน้นส่งงานเป็น scope ที่มี timeline ชัดและตรวจสอบผลลัพธ์ได้</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-side">
+              <time>พ.ย. 2567 — พ.ค. 2568</time>
+              <span class="badge">Intern</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Odoo ERP Developer (Intern)</h3>
+              <p class="company">บริษัท ทรีนิตี้ รูทส์ จำกัด</p>
+              <ul>
+                <li>พัฒนาและปรับโมดูล Odoo ให้เข้ากับ process จริงของลูกค้า</li>
+                <li>ทดสอบระบบและสนับสนุนทีม Functional หลัง go-live</li>
+                <li>ดูแล logic ของ form views, access rights, record rules, onchange และ computed fields</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
       </section>
 
-      <section class="signal-bar" aria-label="Profile highlights">
-        <div><strong>Odoo</strong><span>Custom Addons, Reports, API, Workflows</span></div>
-        <div><strong>Part-time</strong><span>Feature work, bug fixes, integrations, support</span></div>
-        <div><strong>AI</strong><span>Requirement analysis, code review, test planning</span></div>
-      </section>
+      <section id="services" class="section-shell services">
+        <header class="section-heading reveal">
+          <p class="eyebrow"><span>03</span> Services</p>
+          <h2>
+            <span class="serif italic">งานที่</span>รับทำ
+            <span class="serif italic">— scope ตรง ส่งมอบจริง</span>
+          </h2>
+          <p class="section-sub">
+            เลือกได้ตามชิ้นงาน ไม่จำเป็นต้องเหมาทั้งโปรเจกต์
+            คุยกันก่อนว่า input / output คืออะไร แล้วประเมินเวลาให้ชัด
+          </p>
+        </header>
 
-      <section class="about section-shell reveal">
-        <div class="section-kicker">About</div>
-        <p>
-          มีประสบการณ์พัฒนาเว็บแอปพลิเคชันและระบบ Odoo ERP ตั้งแต่การปรับแต่งโมดูล,
-          ทำ business logic, reports PDF/XLSX, เชื่อมต่อ API ภายนอก, แก้ปัญหาหน้างาน
-          และดูแล deployment ด้วย Docker หรือ Kubernetes ทำงานร่วมกับ Functional, QA
-          และ Project Manager ได้ โดยเน้นเข้าใจ flow ธุรกิจก่อนลงมือเขียนโค้ด
-        </p>
-      </section>
-
-      <section id="work" class="section-shell">
-        <div class="section-heading reveal">
-          <div class="section-kicker">Experience</div>
-          <h2>งานที่ทำและความรับผิดชอบ</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <time>มิ.ย. 2568 - ปัจจุบัน</time>
-            <h3>Odoo ERP Developer</h3>
-            <p>บริษัท ไอโมทีฟ จำกัด</p>
-            <ul>
-              <li>Setup และดูแล Odoo ERP ด้วย Docker หรือ K8s เพื่อให้ deploy และ scale ได้ยืดหยุ่น</li>
-              <li>พัฒนา Custom Addons จาก OCA และ Core Odoo ใน Accounting, Sales, Purchase และ Inventory</li>
-              <li>ออกแบบ PDF/XLSX reports, server actions, automated flows และเชื่อมต่อ API ตาม requirement ของธุรกิจ</li>
-              <li>ช่วยวิเคราะห์ requirement, debug issue จาก log/database และปรับ flow ให้เหมาะกับผู้ใช้งานจริง</li>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <header>
+              <span class="num">01</span>
+              <h3>Odoo Customization</h3>
+            </header>
+            <p>
+              Custom modules, fields, computed, onchange, constraints,
+              access rights, record rules, menu / action / view
+              และ workflow ที่ตรงกับ process ขององค์กร
+            </p>
+            <ul class="tags">
+              <li>Python</li><li>XML Views</li><li>ORM</li><li>OCA</li>
             </ul>
           </article>
 
-          <article class="timeline-item reveal">
-            <time>พ.ย. 2568 - มี.ค. 2569</time>
-            <h3>Research Assistant / DevOps Support</h3>
-            <p>AI Chatbot Research Project, Musya</p>
-            <ul>
-              <li>ดูแล infrastructure, backend services และ Kubernetes cluster ด้วย K3s</li>
-              <li>ใช้งาน Longhorn สำหรับ persistent storage และดูแล monitoring เบื้องต้น</li>
-              <li>ทำงานกับทีมวิจัยและทีมพัฒนาให้ระบบ AI chatbot ใช้งานได้อย่างมีเสถียรภาพ</li>
-              <li>ใช้ AI ช่วยสรุป requirement, ตรวจ edge cases และวางแนวทางทดสอบ service ก่อน deploy</li>
+          <article class="service-card reveal">
+            <header>
+              <span class="num">02</span>
+              <h3>Reports &amp; Documents</h3>
+            </header>
+            <p>
+              รายงาน PDF / QWeb และ XLSX สำหรับเอกสารธุรกิจ —
+              sales, purchase, inventory, accounting รวมถึง
+              เอกสารภายในที่ format เฉพาะ
+            </p>
+            <ul class="tags">
+              <li>QWeb</li><li>report_xlsx</li><li>WKHTMLTOPDF</li>
             </ul>
           </article>
 
-          <article class="timeline-item reveal">
-            <time>พ.ย. 2567 - พ.ค. 2568</time>
-            <h3>Odoo ERP Developer / Intern</h3>
-            <p>บริษัท ทรีนิตี้ รูทส์ จำกัด</p>
-            <ul>
-              <li>พัฒนาและปรับแต่งโมดูล Odoo ERP ให้เหมาะกับกระบวนการทำงานของลูกค้า</li>
-              <li>ทดสอบระบบ สนับสนุนทีม Functional และปรับปรุงโมดูลหลักหลังการใช้งานจริง</li>
-              <li>ดูแล logic ที่เกี่ยวกับ form views, access rights, record rules, onchange และ computed fields</li>
+          <article class="service-card reveal">
+            <header>
+              <span class="num">03</span>
+              <h3>API &amp; Automation</h3>
+            </header>
+            <p>
+              เชื่อม REST API, webhook, external services, notification bot,
+              scheduled actions และ automation ลดงาน manual ระหว่างระบบ
+            </p>
+            <ul class="tags">
+              <li>REST</li><li>Webhook</li><li>Cron</li><li>Bots</li>
             </ul>
           </article>
 
-          <article class="timeline-item reveal">
-            <time>ธ.ค. 2568 - ก.พ. 2569</time>
-            <h3>Freelance Odoo ERP Developer</h3>
-            <p>บริษัท อะราวด์ เอ็นเตอร์ไพรซ์ คอนซัลติ้ง จำกัด</p>
-            <ul>
-              <li>พัฒนาและปรับแต่ง Odoo ERP ตาม requirement และ task ที่ได้รับมอบหมาย</li>
-              <li>ออกแบบ reports รูปแบบ PDF และ XLSX สำหรับงานภายในองค์กร</li>
-              <li>เหมาะกับงาน part-time ที่ต้องส่งมอบเป็น task ชัดเจน มี scope, timeline และผลลัพธ์ตรวจสอบได้</li>
+          <article class="service-card reveal">
+            <header>
+              <span class="num">04</span>
+              <h3>Deploy &amp; Maintain</h3>
+            </header>
+            <p>
+              Setup Odoo บน Docker / Kubernetes, ดูแล addons path, config,
+              database backup, log troubleshooting, CI/CD และ deploy แบบลด downtime
+            </p>
+            <ul class="tags">
+              <li>Docker</li><li>K3s</li><li>Argo CD</li><li>Actions</li>
             </ul>
           </article>
         </div>
-      </section>
 
-      <section id="odoo" class="section-shell detail-section">
-        <div class="section-heading reveal">
-          <div class="section-kicker">Odoo Work</div>
-          <h2>งาน Odoo ที่รับผิดชอบได้ตั้งแต่ requirement ถึง deploy</h2>
-        </div>
-
-        <div class="detail-grid">
-          <article class="detail-card reveal">
-            <h3>Customization & Business Logic</h3>
-            <p>
-              พัฒนา custom modules, เพิ่ม fields, computed fields, onchange, constraints,
-              access rights, record rules, menu/action/view และปรับ workflow ให้ตรงกับ process ขององค์กร
-            </p>
-          </article>
-          <article class="detail-card reveal">
-            <h3>Reports & Documents</h3>
-            <p>
-              ทำรายงาน PDF/QWeb และ XLSX สำหรับเอกสารธุรกิจ เช่น sales, purchase, inventory,
-              accounting และเอกสารภายในที่ต้องมี format เฉพาะ
-            </p>
-          </article>
-          <article class="detail-card reveal">
-            <h3>Integration & Automation</h3>
-            <p>
-              เชื่อมต่อ REST API, webhook, external services, notification bot, scheduled actions
-              และ automation เพื่อลดงาน manual ระหว่างระบบ
-            </p>
-          </article>
-          <article class="detail-card reveal">
-            <h3>Deployment & Maintenance</h3>
-            <p>
-              Setup Odoo ด้วย Docker/Kubernetes, ดูแล addons path, config, database backup,
-              log troubleshooting, CI/CD และแนวทาง deploy ที่ลด downtime
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="part-time" class="section-shell detail-section">
-        <div class="section-heading reveal">
-          <div class="section-kicker">Part-time</div>
-          <h2>รับงานพัฒนาแบบ part-time ที่ scope ชัดและส่งมอบได้จริง</h2>
-        </div>
-
-        <div class="part-time-panel reveal">
-          <div>
-            <h3>เหมาะกับงานแบบไหน</h3>
-            <p>
-              เหมาะกับทีมที่ต้องการ developer ช่วยเสริมเป็นช่วง ๆ เช่นทำ Odoo module,
-              แก้ bug, เขียน report, เชื่อม API, ทำ automation, ปรับ frontend/backend
-              หรือช่วยดู deployment โดยคุย scope, priority และ acceptance criteria ก่อนเริ่มงาน
-            </p>
+        <div class="how-it-works reveal">
+          <div class="how-head">
+            <p class="eyebrow"><span>·</span> How we work together</p>
+            <h3>คุยงาน 4 สเต็ปสั้น ๆ ก่อนเริ่ม</h3>
           </div>
-          <ul class="availability-list" aria-label="Part-time work preferences">
-            <li><strong>Task-based</strong><span>รับเป็น feature, bug fix, report หรือ integration รายชิ้น</span></li>
-            <li><strong>Remote-friendly</strong><span>คุยงานผ่าน GitHub, chat, call และส่ง progress เป็นรอบ</span></li>
-            <li><strong>Delivery-focused</strong><span>มี branch, commit, note การทดสอบ และขั้นตอน deploy ให้ตรวจได้</span></li>
-          </ul>
-        </div>
-
-        <div class="ai-grid">
-          <article class="detail-card reveal">
-            <h3>AI for Requirement & Planning</h3>
-            <p>
-              ใช้ AI ช่วยแตก requirement เป็น task, หา edge cases, สรุป flow และเตรียม checklist
-              เพื่อให้การคุยงานกับทีมเร็วขึ้นและลดความคลุมเครือก่อนเริ่มเขียนโค้ด
-            </p>
-          </article>
-          <article class="detail-card reveal">
-            <h3>AI for Coding & Review</h3>
-            <p>
-              ใช้ AI เป็น pair programmer สำหรับอ่าน codebase, เสนอ refactor, ตรวจ bug,
-              generate test cases และทบทวนผลกระทบของ change ก่อนส่งงาน
-            </p>
-          </article>
-          <article class="detail-card reveal">
-            <h3>AI with Engineering Judgment</h3>
-            <p>
-              ไม่ copy คำตอบจาก AI ตรง ๆ แต่ตรวจ logic, security, permission, performance
-              และความเข้ากันได้กับระบบจริงก่อนนำไปใช้เสมอ
-            </p>
-          </article>
+          <ol class="how-steps">
+            <li>
+              <span class="step">01</span>
+              <h4>Brief</h4>
+              <p>ส่ง requirement / pain point มาทาง email หรือ GitHub issue</p>
+            </li>
+            <li>
+              <span class="step">02</span>
+              <h4>Scope</h4>
+              <p>ตอบกลับใน 24 ชม. พร้อม scope, timeline และ acceptance criteria</p>
+            </li>
+            <li>
+              <span class="step">03</span>
+              <h4>Build</h4>
+              <p>ส่ง progress เป็นรอบบน branch / PR พร้อมเอกสารทดสอบ</p>
+            </li>
+            <li>
+              <span class="step">04</span>
+              <h4>Ship</h4>
+              <p>Deploy + handover พร้อมขั้นตอน rollback และ note ใช้งาน</p>
+            </li>
+          </ol>
         </div>
       </section>
 
-      <section id="projects" class="projects section-shell">
-        <div class="section-heading reveal">
-          <div class="section-kicker">Selected Projects</div>
-          <h2>โปรเจกต์ที่สะท้อนวิธีคิดเชิงระบบ</h2>
-        </div>
+      <section id="projects" class="section-shell projects">
+        <header class="section-heading reveal">
+          <p class="eyebrow"><span>04</span> Selected Projects</p>
+          <h2>
+            <span class="serif italic">งานที่</span>สะท้อนวิธีคิด
+          </h2>
+        </header>
 
         <div class="project-grid">
           <article class="project-card reveal">
-            <span>01</span>
-            <h3>Odoo Project Management Customization</h3>
+            <header>
+              <span class="project-num">01</span>
+              <span class="project-tag">Odoo</span>
+            </header>
+            <h3>Project Management Customization</h3>
             <p>
-              ปรับแต่ง Project Management ให้มี sequence แยกตาม project, field สำหรับทีม implement,
-              assignees, sprint, estimate time, timesheet และ flow ที่ช่วยให้ทีมตามงานได้ชัดเจนขึ้น
+              ปรับ Project Management ให้มี sequence แยกตาม project,
+              field สำหรับทีม implement, assignees, sprint, estimate time,
+              timesheet และ flow ที่ทีมตามงานต่อได้ชัดเจน
             </p>
+            <footer>Python · ORM · QWeb</footer>
           </article>
+
           <article class="project-card reveal">
-            <span>02</span>
-            <h3>Discord Bot for Deployment & Monitoring</h3>
+            <header>
+              <span class="project-num">02</span>
+              <span class="project-tag">DevOps</span>
+            </header>
+            <h3>Discord Deploy &amp; Monitor Bot</h3>
             <p>
-              ทำ bot สำหรับแจ้งเตือน backup database, ใช้คำสั่ง /deploy และ trigger GitHub Actions
-              ผ่าน API เพื่อลดขั้นตอน deploy และทำให้ทีมเห็นสถานะของระบบได้เร็วขึ้น
+              Bot สำหรับแจ้งเตือน backup database, รับคำสั่ง <code>/deploy</code>
+              และ trigger GitHub Actions ผ่าน API — ลดขั้นตอน deploy
+              และทำให้สถานะระบบเห็นได้เร็ว
             </p>
+            <footer>Node.js · GitHub API · Webhooks</footer>
           </article>
+
           <article class="project-card reveal">
-            <span>03</span>
-            <h3>CI/CD Pipeline and DevOps</h3>
+            <header>
+              <span class="project-num">03</span>
+              <span class="project-tag">Pipeline</span>
+            </header>
+            <h3>CI/CD on Kubernetes</h3>
             <p>
-              ออกแบบ pipeline ด้วย GitHub Actions, Argo CD และ Argo Workflows สำหรับ build,
-              test และ deploy อัตโนมัติบน Kubernetes พร้อมแนวทางแยก environment สำหรับงานจริง
+              Pipeline ด้วย GitHub Actions, Argo CD และ Argo Workflows
+              สำหรับ build / test / deploy อัตโนมัติบน K8s พร้อมแยก env
+              สำหรับ staging และ production
             </p>
+            <footer>Argo CD · K3s · Actions</footer>
           </article>
+
           <article class="project-card reveal">
-            <span>04</span>
-            <h3>AI-assisted Development Workflow</h3>
+            <header>
+              <span class="project-num">04</span>
+              <span class="project-tag">Workflow</span>
+            </header>
+            <h3>AI-assisted Delivery Loop</h3>
             <p>
-              ใช้ AI ช่วยอ่าน requirement, สรุป issue, วาง test cases, review code และทำ documentation
-              เพื่อให้ส่งงาน part-time ได้เร็วขึ้นโดยยังคุมคุณภาพด้วยการตรวจจริงจาก developer
+              ใช้ AI ช่วยอ่าน requirement, สรุป issue, วาง test cases,
+              review code และทำ documentation — ส่งงาน part-time ได้เร็ว
+              โดยยังตรวจ logic / security จริงด้วย developer
             </p>
+            <footer>Process · Review · Tests</footer>
           </article>
         </div>
       </section>
 
-      <section id="skills" class="skills section-shell">
-        <div class="section-heading reveal">
-          <div class="section-kicker">Skills</div>
-          <h2>เครื่องมือที่ใช้ทำงานจริง</h2>
-        </div>
+      <section id="stack" class="section-shell stack">
+        <header class="section-heading reveal">
+          <p class="eyebrow"><span>05</span> Stack</p>
+          <h2><span class="serif italic">Tools</span> ที่ใช้จริง</h2>
+        </header>
         <div class="skill-marquee reveal" aria-label="Technology skills">
           <div class="skill-track">
             <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>React</span>
@@ -279,19 +414,48 @@
         </div>
       </section>
 
-      <section id="contact" class="contact section-shell reveal">
-        <div>
-          <div class="section-kicker">Contact</div>
-          <h2>พร้อมคุยเรื่องงาน Odoo และ Developer part-time</h2>
-        </div>
-        <div class="contact-list">
-          <span>ส่ง requirement, scope งาน หรือ issue ที่อยากให้ช่วยดูมาได้เลย</span>
-          <a href="mailto:thewarat.tao19@gmail.com">thewarat.tao19@gmail.com</a>
-          <a href="https://github.com/tao-thewarat" target="_blank" rel="noreferrer">github.com/tao-thewarat</a>
-          <a href="tel:+66922971887">092 297 1887</a>
-          <span>มุกดาหาร, ประเทศไทย</span>
+      <section id="contact" class="section-shell contact">
+        <div class="contact-card reveal">
+          <p class="eyebrow"><span>06</span> Let&apos;s build</p>
+          <h2>
+            <span class="serif italic">Got</span> a task<br/>
+            in mind?
+          </h2>
+          <p class="contact-lead">
+            ส่ง requirement, scope งาน หรือ issue ที่อยากให้ช่วยดูมาได้เลย
+            ตอบกลับภายใน 24 ชั่วโมงพร้อมประเมินเวลา
+          </p>
+          <div class="contact-grid">
+            <a class="contact-item" href="mailto:thewarat.tao19@gmail.com">
+              <span>Email</span>
+              <strong>thewarat.tao19@gmail.com</strong>
+            </a>
+            <a class="contact-item" href="tel:+66922971887">
+              <span>Phone</span>
+              <strong>092 297 1887</strong>
+            </a>
+            <a class="contact-item" href="https://github.com/tao-thewarat" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+              <strong>github.com/tao-thewarat</strong>
+            </a>
+            <div class="contact-item static">
+              <span>Based in</span>
+              <strong>มุกดาหาร · Thailand</strong>
+            </div>
+          </div>
+          <a class="button primary big" href="mailto:thewarat.tao19@gmail.com?subject=Part-time%20Odoo%20%2F%20Web%20development">
+            <span>เริ่มคุยงานทาง Email</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
         </div>
       </section>
+
+      <footer class="site-footer">
+        <span>© 2026 Thewarat Khonhan</span>
+        <span class="mono">Built with HTML · CSS · a bit of JS</span>
+      </footer>
     </main>
 
     <script src="script.js"></script>
